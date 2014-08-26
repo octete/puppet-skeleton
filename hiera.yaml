@@ -1,0 +1,10 @@
+---
+:backends:
+  - yaml
+:yaml:
+  :datadir: "/etc/puppet/environments/%{environment}/hieradata"
+:hierarchy:
+  - "nodes/%{::clientcert}"
+  - "%{::custom_location}"
+  - common 
+# comment
